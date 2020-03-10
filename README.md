@@ -14,7 +14,7 @@
   4. Build image on the build server and push artifact on the artifactory docker
   5. Deploy application on the production server
   6. Ensure application is deployed 
-7
+
 
    
 
