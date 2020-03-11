@@ -103,7 +103,7 @@ pipeline {
                     expression { GIT_BRANCH == 'origin/master' }
                 }
                 steps {
-                    sh 'ansible-playbook all -i hosts --vault-password-file vault.key check_deploy_app.yml'
+                    sh 'ansible-playbook  -i hosts --vault-password-file vault.key check_deploy_app.yml'
                 }
              }
           }
