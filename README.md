@@ -2,4 +2,4 @@
 
 ## Project description
 
-- This is a complete pipeline CI/CD with GitLab to deploy a python application in production
+- This is a pipeline CI/CD with Jenkins to deploy application in production
