@@ -1,6 +1,6 @@
 ---
 
-student_list_source_repo: "git@gitlab.com:diranerpi/student-list.git"
+student_list_source_repo: "git@github.com:samiamr/student-list-jenkins-CI_CD.git"
 student_list_source_branch: "master"
 
 student_list_docker_image_tag: "v1"
