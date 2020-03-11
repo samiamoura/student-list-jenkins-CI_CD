@@ -98,12 +98,12 @@ pipeline {
                     sh 'ansible all -m ping -i hosts --private-key id_rsa'
                 }
              }
-             stage("ansible playbook Test Apolication is Available") {
+             stage("Ensure application is deployed") {
                 when {
                     expression { GIT_BRANCH == 'origin/master' }
                 }
                 steps {
-                    sh 'ansible-playbook  --vault-password-file vault.key check_deploy_app.yml'
+                    sh 'ansible-playbook all -i hosts --vault-password-file vault.key check_deploy_app.yml'
                 }
              }
           }
